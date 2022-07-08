@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>tables</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Table1</h1>
+    <!-- table>(tr>((th{Table head})+(td{table cell}*6)))*5 -->
+    <table id="table1">
+        <tr>
+            <th>Table head</th>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+        </tr>
+        <tr>
+            <th>Table head</th>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+        </tr>
+        <tr>
+            <th>Table head</th>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+        </tr>
+        <tr>
+            <th>Table head</th>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+        </tr>
+        <tr>
+            <th>Table head</th>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+        </tr>
+    </table>
+
+    <h1>Table2</h1>
+    <!-- table#table2>(tr>((th{Table head})+(td{table cell}*6)))*5 -->
+    <table id="table2">
+        <tr>
+            <th></th>
+            <td colspan="2"> table cell</td>
+            <td colspan="2"> table cell</td>
+            <td colspan="2"> table cell</td>
+
+
+        </tr>
+        <tr>
+            <th rowspan="2">Table head</th>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+        </tr>
+        <tr>
+
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Table head</th>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+        </tr>
+        <tr>
+
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+            <td>table cell</td>
+        </tr>
+    </table>
+
+    <h1>Table3</h1>
+    <table id="table3">
+        <thead>
+            <tr>
+                <th>Table head</th>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+            </tr>
+            <tr>
+                <th>Table head</th>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Table head</th>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+            </tr>
+            <tr>
+                <th>Table head</th>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Table head</th>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h1>Table4</h1>
+    <table { border: 1px solid grey; }>
+        <th { border: 1px solid grey; }>text 1</th>
+        <td { border: 1px solid grey; }> text 2</td>
+    </table>
+
+    <h1>Table5</h1>
+    <table>
+        <caption>Перечень продуктов</caption>
+        <tr>
+            <th>№ п/п</th>
+            <th>Наименование товара</th>
+            <th>Ед. изм.</th>
+            <th>Количество</th>
+            <th>Цена за ед. изм., руб.</th>
+            <th>Стоимость, руб.</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Томаты свежие</td>
+            <td>кг</td>
+            <td>15,20</td>
+            <td>69,00</td>
+            <td>1048,80</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Огурцы свежие</td>
+            <td>кг</td>
+            <td>2,50</td>
+            <td>48,00</td>
+            <td>120,00</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:right">ИТОГО:</td>
+            <td>1168,80</td>
+        </tr>
+    </table>
+
+    <h1>Table6</h1>
+    <table>
+        <colgroup>
+            <col span="2" style="background:Khaki">
+            <!-- С помощью этой конструкции задаем цвет фона для первых двух столбцов таблицы-->
+            <col style="background-color:LightCyan">
+            <!-- Задаем цвет фона для следующего (одного) столбца таблицы-->
+        </colgroup>
+        <tr>
+            <th>№ п/п</th>
+            <th>Наименование</th>
+            <th>Цена, руб.</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Карандаш цветной</td>
+            <td>20,00</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Линейка 20 см</td>
+            <td>30,00</td>
+        </tr>
+    </table>
+
+    <h1>Table7</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>№ п/п</th>
+                <th>Наименование товара</th>
+                <th>Ед. изм.</th>
+                <th>Количество</th>
+                <th>Цена за ед. изм., руб.</th>
+                <th>Стоимость, руб.</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="5" style="text-align:right">ИТОГО:</td>
+                <td>1168,80</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>Томаты свежие</td>
+                <td>кг</td>
+                <td>15,20</td>
+                <td>69,00</td>
+                <td>1048,80</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Огурцы свежие</td>
+                <td>кг</td>
+                <td>2,50</td>
+                <td>48,00</td>
+                <td>120,00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Table8</h1>
+    <table>
+        <tr>
+            <th>№ п/п</th>
+            <th>Наименование товара</th>
+            <th>Ед. изм.</th>
+            <th>Количество</th>
+            <th>Цена за ед. изм., руб.</th>
+            <th>Стоимость, руб.</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Томаты свежие</td>
+            <td>кг</td>
+            <td>15,20</td>
+            <td>69,00</td>
+            <td>1048,80</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Огурцы свежие</td>
+            <td>кг</td>
+            <td>2,50</td>
+            <td>48,00</td>
+            <td>120,00</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:right">ИТОГО:</td>
+            <td>1168,80</td><!-- Задаем количество ячеек по горизонтали для объединения-->
+        </tr>
+    </table>
+
+    <h1>Table9</h1>
+    <table id="table9">
+        <caption>Меню ресторана "Ромашка"</caption>
+        <tr>
+            <th rowspan="2" class="first">Кухня</th>
+            <th colspan="2">Холодные блюда</th>
+            <th colspan="2">Горячие блюда</th>
+            <th rowspan="2">Десерты</th>
+        </tr>
+        <!-- class="first" - отдельно меняем свойство текста -->
+        <tr>
+            <td class="first">Салаты</td>
+            <td class="first">Закуски</td>
+            <td class="first">Первые блюда</td>
+            <td class="first">Вторые блюда</td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="first">Русская</td>
+            <td>Винегрет</td>
+            <td>Язык с хреном</td>
+            <td>Щи с квашеной капустой</td>
+            <td>Вареники с картошкой</td>
+            <td>Печеные яблоки с медом</td>
+        </tr>
+        <tr>
+            <td>Оливье</td>
+            <td>Студень говяжий</td>
+            <td>Рассольник домашний</td>
+            <td>Караси запеченые в сметане</td>
+            <td>Блинчатый пирог</td>
+        </tr>
+        <tr>
+            <td>Сельдь под "шубой"</td>
+            <td>Судак заливной</td>
+            <td>Мясная солянка</td>
+            <td>Котлеты "Пожарские"</td>
+            <td>Пирожное "Картошка"</td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="first">Испанская</td>
+            <td>Севиче из гребешков</td>
+            <td>Эмпанадас</td>
+            <td>Хлебный суп с чесноком</td>
+            <td>Паэлья с морепродуктами</td>
+            <td>Чуррос</td>
+        </tr>
+        <tr>
+            <td>Тимбал из авокадо и тунца</td>
+            <td>Ахотомате</td>
+            <td>Астурийская фабада</td>
+            <td>Свиное раксо</td>
+            <td>Альмойшавена</td>
+        </tr>
+        <tr>
+            <td>Фасоль с ветчиной</td>
+            <td>Чанфайна</td>
+            <td>Рыбный суп с манными клецками </td>
+            <td>Тортилья картофельная</td>
+            <td>Бунуэлос</td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="first">Французская</td>
+            <td>Вогезский салат</td>
+            <td>Рийет из курицы</td>
+            <td>Баклажанный крем-суп "Ренуар"</td>
+            <td>Картофель огратен</td>
+            <td>Бриоши</td>
+        </tr>
+        <tr>
+            <td>Салат "Панзанелла"</td>
+            <td>Делисьез из сыра</td>
+            <td>Французский тыквенный суп</td>
+            <td>Гратин из птицы</td>
+            <td>Лигурийский лимонный пирог</td>
+        </tr>
+        <tr>
+            <td>Тар-тар</td>
+            <td>Маринованный лосось</td>
+            <td>Суп "Конти"</td>
+            <td>Тартифлетт</td>
+            <td>Саварен "Триумф"</td>
+        </tr>
+    </table>
+
+    <h1>Table10</h1>
+    <table class="list">
+        <tr>
+            <th>Comedy</th>
+            <th>Adventure</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Scary Movie</td>
+            <td>Indiana Jones</td>
+            <td>The Punisher</td>
+        </tr>
+        <tr>
+            <td>Epic Movie</td>
+            <td>Star Wars</td>
+            <td>Bad Boys</td>
+        </tr>
+    </table>
+
+    <h1>Table11</h1>
+    <table id="company">
+        <tr>
+            <th>Company</th>
+            <th>Q1</th>
+            <th>Q2</th>
+            <th>Q3</th>
+        </tr>
+        <tr>
+            <td>Microsoft</td>
+            <td>20.3</td>
+            <td>30.5</td>
+            <td>23.5</td>
+        </tr>
+        <tr>
+            <td>Google</td>
+            <td>50.2</td>
+            <td>40.63</td>
+            <td>45.23</td>
+        </tr>
+    </table>
+    При этом class="list" можно будет использовать
+    для оформления других таблиц (элементов),
+    а id="company" — только для одной таблицы.
+
+    <h1>Table12</h1>
+    <table class="nesting">
+        <tr>
+            <th>ячейка заголовка таблицы</th>
+            <th>ячейка заголовка таблицы</th>
+        </tr>
+        <tr>
+            <td>ячейка таблицы</td>
+            <td>
+                <table>
+                    <tr>
+                        <th>ячейка заголовка вложенной таблицы</th>
+                    </tr>
+                    <tr>
+                        <td>ячейка вложенной таблицы</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>
